@@ -10,9 +10,11 @@ defmodule MeetYourDeveloper.Builder do
 
   def callback(_file_path, _events), do: build
 
-  def build, do: [:clean, :assets, :styles, :scripts, :pages, :blog] |> Enum.map(&build/1)
+  def build, do: [:clean, :cname, :assets, :styles, :scripts, :pages, :blog] |> Enum.map(&build/1)
 
   defp build(:clean), do: File.rm_rf(@dest) && File.mkdir(@dest)
+
+  defp build(:cname), do: "#{@src}/CNAME" |> File.cp("#{@dest}/CNAME")
 
   defp build(:assets), do: "#{@src}/assets" |> File.cp_r("#{@dest}/assets")
 
