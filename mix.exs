@@ -16,7 +16,7 @@ defmodule MeetYourDeveloper.Mixfile do
   end
 
   def application do
-    [applications: [:cowboy, :exfswatch, :logger, :plug],
+    [applications: [:cowboy, :logger, :plug],
      mod: {MeetYourDeveloper, []}]
   end
 
