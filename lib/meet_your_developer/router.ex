@@ -1,8 +1,10 @@
 defmodule MeetYourDeveloper.Router do
   use Plug.Router
 
+  @public "docs/"
+
   plug Plug.Logger
-  plug Plug.Static, at: "/", from: :meet_your_developer
+  plug Plug.Static, at: "/", from: @public
   plug :match
   plug :dispatch
 
@@ -16,5 +18,5 @@ defmodule MeetYourDeveloper.Router do
   defp send_index(conn, true),  do: conn |> send_file(200, conn.assigns[:index_path])
   defp send_index(conn, false), do: conn |> send_resp(404, "Not found")
 
-  defp set_index_path(conn), do: conn |> assign(:index_path, "priv/static/" <> join_path_info(conn) <> "/index.html")
+  defp set_index_path(conn), do: conn |> assign(:index_path, @public <> join_path_info(conn) <> "/index.html")
 end
