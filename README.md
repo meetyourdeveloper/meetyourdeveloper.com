@@ -32,4 +32,6 @@ Changes in `lib/web` will automatically be rebuilt.
 
 ## Publishing
 
-Updating the `master` branch will update the live site. For major changes, please _branch -> commit -> rebase -> review_ before updating `master`.
+Updating the `master` branch will update the live site.
+
+For major changes, please _branch -> commit -> rebase -> review_ before updating `master`.
