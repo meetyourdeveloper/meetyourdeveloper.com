@@ -5,7 +5,7 @@ defmodule MeetYourDeveloper do
     import Supervisor.Spec, warn: false
 
     children = [
-      worker(MeetYourDeveloper.Watcher, []),
+      worker(MeetYourDeveloper.Builder, []),
       worker(MeetYourDeveloper.Router, [])
     ]
 

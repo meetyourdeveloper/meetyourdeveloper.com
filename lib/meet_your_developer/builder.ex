@@ -1,8 +1,14 @@
 defmodule MeetYourDeveloper.Builder do
+  use ExFSWatch, dirs: ["lib/web"]
+
   require EEx
 
   @src  "lib/web"
   @dest "priv/static"
+
+  def start_link, do: build && __MODULE__.start
+
+  def callback(_file_path, _events), do: build
 
   def build, do: [:clean, :assets, :styles, :scripts, :pages, :blog] |> Enum.map(&build/1)
 
