@@ -4,7 +4,7 @@ defmodule MeetYourDeveloper.Builder do
   require EEx
 
   @src  "lib/web"
-  @dest "priv/static"
+  @dest "docs"
 
   def start_link, do: build && __MODULE__.start
 
