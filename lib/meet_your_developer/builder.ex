@@ -16,9 +16,9 @@ defmodule MeetYourDeveloper.Builder do
 
   defp build(:assets), do: "#{@src}/assets" |> File.cp_r("#{@dest}/assets")
 
-  defp build(:styles), do: "#{@dest}/styles.css" |> File.write("#{@src}/styles/**/*.css" |> Path.wildcard |> concat)
+  defp build(:styles), do: "#{@dest}/styles.css" |> File.write(concat(:styles))
 
-  defp build(:scripts), do: "#{@dest}/scripts.js" |> File.write("#{@src}/scripts/**/*.js" |> Path.wildcard |> concat)
+  defp build(:scripts), do: "#{@dest}/scripts.js" |> File.write(concat(:scripts))
 
   defp build(:pages) do
     "#{@src}/pages" |> File.cp_r("#{@dest}")
@@ -30,7 +30,9 @@ defmodule MeetYourDeveloper.Builder do
     "#{@src}/posts/*.md" |> Path.wildcard |> Enum.each(&render_post/1)
   end
 
-  defp concat(files), do: files |> Enum.reduce("", &(&2 <> File.read!(&1)))
+  defp concat(:styles),  do: "#{@src}/styles/**/*.css" |> Path.wildcard |> concat
+  defp concat(:scripts), do: "#{@src}/scripts/**/*.js" |> Path.wildcard |> concat
+  defp concat(files),    do: files |> Enum.reduce("", &(&2 <> File.read!(&1)))
 
   defp render_page(path) do
     path
