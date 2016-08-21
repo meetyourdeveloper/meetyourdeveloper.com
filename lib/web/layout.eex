@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
   <title>Meet Your Developer</title>
-  <link type="text/css" rel="stylesheet" href="/styles.css" />
-  <script type="text/javascript" source="/scripts.js"></script>
+
+  <!-- PURE CSS -->
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/base-min.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/buttons-min.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css" media="screen" title="no title" charset="utf-8">
+
+  <!-- FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  <!-- OVERRIDES / CUSTOM -->
+  <link rel="stylesheet" href="/styles.css" media="screen" title="no title" charset="utf-8">
+
+  <script type="text/javascript" src="/scripts.js" charset="utf-8"></script>
 </head>
-<body>
-  <h1>Meet Your Developer</h1>
+<body onload="spotlight()">
+
+  <div id="header">
+		<span id="logo" class="mobile-hide">
+			MeetYourDeveloper.com<span class="mobile-hide">/</span><input id="spotlight" class="mobile-hide" type="text" value="johndoe" />
+		</span>
+	</div>
+
   <%= content %>
+
 </body>
 </html>
