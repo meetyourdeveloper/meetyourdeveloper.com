@@ -4,47 +4,39 @@ defmodule MeetYourDeveloper.Builder do
   @src  "lib/web"
   @dest "priv/static"
 
-  def build, do: [:clean, :assets, :styles, :scripts, :pages, :blog] |> Enum.map(&(build(&1)))
+  def build, do: [:clean, :assets, :styles, :scripts, :pages, :blog] |> Enum.map(&build/1)
 
-  defp build(:clean) do
-    File.rm_rf @dest
-    File.mkdir @dest
-  end
+  defp build(:clean), do: File.rm_rf(@dest) && File.mkdir(@dest)
 
-  defp build(:assets), do: "#{@src}/assets" |> File.cp_r!("#{@dest}/assets")
+  defp build(:assets), do: "#{@src}/assets" |> File.cp_r("#{@dest}/assets")
 
-  defp build(:styles), do: "#{@src}/styles/**/*.css" |> Path.wildcard |> concat("#{@dest}/styles.css")
+  defp build(:styles), do: "#{@dest}/styles.css" |> File.write("#{@src}/styles/**/*.css" |> Path.wildcard |> concat)
 
-  defp build(:scripts), do: "#{@src}/scripts/**/*.js" |> Path.wildcard |> concat("#{@dest}/scripts.js")
+  defp build(:scripts), do: "#{@dest}/scripts.js" |> File.write("#{@src}/scripts/**/*.js" |> Path.wildcard |> concat)
 
   defp build(:pages) do
-    "#{@src}/pages" |> File.cp_r!("#{@dest}")
-    "#{@src}/pages/**/*.html"
-    |> Path.wildcard
-    |> Enum.each(fn path ->
-      {:ok, file} = File.open String.replace(path, "#{@src}/pages", "#{@dest}"), [:write]
-      IO.binwrite(file, path |> File.read! |> template)
-      File.close file
-    end)
+    "#{@src}/pages" |> File.cp_r("#{@dest}")
+    "#{@src}/pages/**/*.html" |> Path.wildcard |> Enum.each(&render_page/1)
   end
 
   defp build(:blog) do
     File.mkdir "#{@dest}/posts"
-    "#{@src}/posts/*.md"
-    |> Path.wildcard
-    |> Enum.each(fn path ->
-      destination = path |> String.replace(@src, @dest) |> String.replace(".md", ".html")
-      {:ok, file} = File.open destination, [:write]
-      IO.binwrite(file, path |> File.read! |> Earmark.to_html |> template)
-      File.close file
-    end)
+    "#{@src}/posts/*.md" |> Path.wildcard |> Enum.each(&render_post/1)
   end
 
-  defp concat(from, to) do
-    File.touch to
-    {:ok, file} = File.open to, [:write]
-    from |> Enum.each(&(IO.binwrite(file, File.read!(&1))))
-    File.close file
+  defp concat(files), do: files |> Enum.reduce("", &(&2 <> File.read!(&1)))
+
+  defp render_page(path) do
+    path
+    |> String.replace("#{@src}/pages", "#{@dest}")
+    |> File.write(path |> File.read! |> template)
+  end
+
+  defp render_post(path) do
+    path
+    |> String.replace(@src, @dest)
+    |> String.replace(".md", ".html")
+    |> File.write(path |> File.read! |> Earmark.to_html |> template)
   end
 
   EEx.function_from_file :def, :template, "#{@src}/layout.eex", [:content]
