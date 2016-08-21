@@ -2,15 +2,15 @@
 
 Meet Your Developer is a _"stationary"_ site.
 
-Source files from `lib/web` are built into `priv/static` and served either locally or on Github Pages.
+Source files from `lib/web/` are built into `docs/` and served either locally or on Github Pages.
 
 ## Installation
 
 Clone this repo:
 
 ```shell
-git clone https://github.com/meetyourdeveloper/meetyourdeveloper.github.io.git
-cd meetyourdeveloper.github.io
+git clone https://github.com/meetyourdeveloper/meetyourdeveloper.com.git
+cd meetyourdeveloper.com
 ```
 
 Install the dependencies:
