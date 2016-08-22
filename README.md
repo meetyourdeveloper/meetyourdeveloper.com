@@ -22,7 +22,7 @@ mix compile
 
 ## Local Server
 
-Starting the Elixir app will run a localhost server:
+Starting the Elixir app will run a localhost server on port 7976: 
 
 ```shell
 mix run --no-halt
