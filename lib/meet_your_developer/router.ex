@@ -1,14 +1,17 @@
 defmodule MeetYourDeveloper.Router do
   use Plug.Router
 
-  @public "docs/"
+  @public "priv/static/"
 
   plug Plug.Logger
   plug Plug.Static, at: "/", from: @public
   plug :match
   plug :dispatch
 
-  def start_link, do: {:ok, _} = Plug.Adapters.Cowboy.http __MODULE__, []
+  def start_link, do: {:ok, _} = Plug.Adapters.Cowboy.http __MODULE__, [], port: port(System.get_env("PORT"))
+
+  defp port(nil), do: 7976
+  defp port(value), do: value |> String.to_integer
 
   get _, do: conn |> set_index_path |> send_index
 
