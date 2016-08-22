@@ -4,17 +4,15 @@ defmodule MeetYourDeveloper.Builder do
   require EEx
 
   @src  "lib/web"
-  @dest "docs"
+  @dest "priv/static"
 
-  def start_link, do: build && __MODULE__.start
+  def start_link, do: __MODULE__.start
 
   def callback(_file_path, _events), do: build
 
-  def build, do: [:clean, :cname, :assets, :styles, :scripts, :pages, :blog] |> Enum.map(&build/1)
+  def build, do: [:clean, :assets, :styles, :scripts, :pages, :blog] |> Enum.map(&build/1)
 
-  defp build(:clean), do: File.rm_rf(@dest) && File.mkdir(@dest)
-
-  defp build(:cname), do: "#{@src}/CNAME" |> File.cp("#{@dest}/CNAME")
+  defp build(:clean), do: File.rm_rf(@dest) && File.mkdir_p(@dest)
 
   defp build(:assets), do: "#{@src}/assets" |> File.cp_r("#{@dest}/assets")
 
