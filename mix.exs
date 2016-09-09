@@ -16,15 +16,17 @@ defmodule MeetYourDeveloper.Mixfile do
   end
 
   def application do
-    [applications: [:cowboy, :logger, :plug],
+    [applications: [:cowboy, :logger, :plug, :yaml_elixir],
      mod: {MeetYourDeveloper, []}]
   end
 
   defp deps do
-    [{:cowboy,    "~> 1.0.0"},
-     {:earmark,   "~> 1.0.1"},
-     {:ex_doc,    "~> 0.12"},
-     {:exfswatch, "~> 0.1.0"},
-     {:plug,      "~> 1.0"}]
+    [{:cowboy,      "~> 1.0.0"},
+     {:credo,       "~> 0.4", only: [:dev, :test]},
+     {:earmark,     "~> 1.0.1"},
+     {:ex_doc,      "~> 0.12"},
+     {:exfswatch,   "~> 0.1.0"},
+     {:plug,        "~> 1.0"},
+     {:yaml_elixir, "~> 1.2.1"}]
   end
 end
