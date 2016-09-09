@@ -17,7 +17,7 @@
 
   <div id="header">
     <a href="/"><i class="fa fa-home" aria-hidden="true"></i></a>
-    <form>
+    <form id="spotlight-form">
       <label for="spotlight">MeetYourDeveloper.com/</label><input id="spotlight" name="spotlight" type="text" placeholder="johndoe" />
     </form>
     <a href="/"><i class="fa fa-rss" aria-hidden="true"></i></a>
@@ -45,9 +45,11 @@
       </div>
       <hr />
       <p>
-        <form>
+        <form "https://formspree.io/email@richardrissanen.com"
+      method="POST">
           Receive updates in your inbox by joining our mailing list: &nbsp;
-          <input type="text" placeholder="you@example.com" /> &nbsp;
+          <input type="hidden" name="_next" value="http://www.meetyourdeveloper.com/thanks" />
+          <input type="text" name="email-submitted" placeholder="you@example.com" /> &nbsp;
           <input type="submit" value="JOIN NOW" />
         </form>
       </p>
