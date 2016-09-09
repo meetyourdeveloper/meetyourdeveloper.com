@@ -109,6 +109,8 @@ div#footer {
   font-size: .9em;
 }
 
+/* TEMP FIX: refactor these in order to minimize markup and classes used. */
+
 .no-margin {
   margin: 0;
 }
