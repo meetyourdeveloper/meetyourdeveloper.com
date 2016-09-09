@@ -108,3 +108,16 @@ div#footer {
   text-align: center;
   font-size: .9em;
 }
+
+.no-margin {
+  margin: 0;
+}
+
+.primary-image {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.text-center {
+  text-align: center;
+}

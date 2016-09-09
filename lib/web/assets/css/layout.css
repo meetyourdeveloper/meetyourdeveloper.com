@@ -37,7 +37,7 @@ div.wrapper {
   padding: 11px;
 }
 
-div#content > div.wrapper:first-child {
+div#content > div.wrapper.add-bottom-margin {
   margin-bottom: 7em;
 }
 
@@ -149,4 +149,38 @@ div#footer input[type="submit"] {
   font-weight: bold;
   display: inline-block;
   padding: .5em 1em;
+}
+
+@media only screen and (max-width: 1045px) {
+  ul, ol { padding-left: 22px; }
+}
+
+@media only screen and (max-width: 810px) {
+
+  div#contact-buttons a, div#footer div.wrapper div {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 94%;
+  }
+
+  div#footer div.wrapper div { width: 100% }
+
+  div#header form { display: none; }
+
+  div#footer div.wrapper div:nth-child(4) {
+    margin: 0 0 2em 0;
+  }
+
+}
+
+@media only screen and (max-width: 610px) {
+
+  #subfooter a {
+    display: block;
+    padding-bottom: 11px;
+    padding-top: 11px;
+    width: 94%;
+  }
+
 }
