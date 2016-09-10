@@ -23,6 +23,10 @@ h1 small {
   color: Gray;
 }
 
+h1, h1 small {
+  line-height: 48px;
+}
+
 h2 {
   border-bottom: 3px solid WhiteSmoke;
   font-size: 32px;
@@ -109,10 +113,22 @@ div#footer {
   font-size: .9em;
 }
 
-/* TEMP FIX: refactor these in order to minimize markup and classes used. */
+/* TEMP FIX: refactor these in or der to minimize markup and classes used. */
+
+.wrapper.add-bottom-margin.blog-post {
+  max-width: 666px;
+}
+
+.negative-bottom-margin {
+  margin-bottom: -5px;
+}
+
+.no-border {
+  border: 0 transparent solid;
+}
 
 .no-margin {
-  margin: 0;
+  margin: 0 0 0 0;
 }
 
 .primary-image {

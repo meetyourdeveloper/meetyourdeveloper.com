@@ -151,6 +151,13 @@ div#footer input[type="submit"] {
   padding: .5em 1em;
 }
 
+h1 br {display: inherit;}
+
+.blog-post img {
+  margin-left: -10%;
+  width:120%;
+}
+
 @media only screen and (max-width: 1045px) {
   ul, ol { padding-left: 22px; }
 }
@@ -166,15 +173,19 @@ div#footer input[type="submit"] {
 
   div#footer div.wrapper div { width: 100% }
 
-  div#header form { display: none; }
-
   div#footer div.wrapper div:nth-child(4) {
     margin: 0 0 2em 0;
+  }
+
+  .blog-post img {
+    margin-left: 0%;
+    width:100%;
   }
 
 }
 
 @media only screen and (max-width: 610px) {
+  h1 br {display: none;}
 
   #subfooter a {
     display: block;

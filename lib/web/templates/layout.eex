@@ -18,9 +18,9 @@
   <div id="header">
     <a href="/"><i class="fa fa-home" aria-hidden="true"></i></a>
     <form id="spotlight-form">
-      <label for="spotlight">MeetYourDeveloper.com/</label><input id="spotlight" name="spotlight" type="text" placeholder="johndoe" />
+      <label for="spotlight">MeetYourDeveloper.com</label>
     </form>
-    <a href="/"><i class="fa fa-rss" aria-hidden="true"></i></a>
+    <!-- <a href="/"><i class="fa fa-rss" aria-hidden="true"></i></a> -->
   </div>
 
   <div id="content">
