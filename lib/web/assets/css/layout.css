@@ -106,7 +106,7 @@ div#footer div.wrapper p:last-child {
   color: #333;
 }
 
-div#footer div.wrapper div {
+div#footer div.wrapper div#promotions div {
   width: 30%;
   display: inline-block;
   text-align: left;
@@ -114,9 +114,9 @@ div#footer div.wrapper div {
   margin-bottom: 2em;
 }
 
-div#footer div.wrapper div:nth-child(4) { margin: 0 3% }
+div#footer div.wrapper div#promotions div:nth-child(2) { margin: 0 5% }
 
-div#footer div.wrapper div h2 {
+div#footer div.wrapper div#promotions div h2 {
   color: #bababa;
   font-size: 16px;
   margin: 0;
@@ -124,7 +124,7 @@ div#footer div.wrapper div h2 {
   padding: 0;
 }
 
-div#footer div.wrapper div h2 small {
+div#footer div.wrapper div#promotions div h2 small {
   color: DimGray;
   font-weight: 400;
 }
@@ -158,22 +158,19 @@ h1 br {display: inherit;}
   width:120%;
 }
 
-@media only screen and (max-width: 1045px) {
-  ul, ol { padding-left: 22px; }
-}
+@media only screen and (max-width: 1045px) { ul, ol { padding-left: 22px; } }
 
 @media only screen and (max-width: 810px) {
-
-  div#contact-buttons a, div#footer div.wrapper div {
+  div#contact-buttons a, div#footer div.wrapper div#promotions div {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 94%;
   }
 
-  div#footer div.wrapper div { width: 100% }
+  div#footer div.wrapper div#promotions div { width: 100% }
 
-  div#footer div.wrapper div:nth-child(4) {
+  div#footer div.wrapper div#promotions div:nth-child(2) {
     margin: 0 0 2em 0;
   }
 
@@ -187,11 +184,19 @@ h1 br {display: inherit;}
 @media only screen and (max-width: 610px) {
   h1 br {display: none;}
 
-  #subfooter a {
+  div#subfooter a {
     display: block;
+    margin: 0 0 0 0;
     padding-bottom: 11px;
     padding-top: 11px;
     width: 94%;
   }
+}
 
+@media only screen and (max-width: 320px) {
+  div#footer input[type="text"] {
+    display: block;
+    margin: 11px auto;
+    width: 160px;
+  }
 }
