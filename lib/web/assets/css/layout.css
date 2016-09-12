@@ -158,12 +158,9 @@ h1 br {display: inherit;}
   width:120%;
 }
 
-@media only screen and (max-width: 1045px) {
-  ul, ol { padding-left: 22px; }
-}
+@media only screen and (max-width: 1045px) { ul, ol { padding-left: 22px; } }
 
 @media only screen and (max-width: 810px) {
-
   div#contact-buttons a, div#footer div.wrapper div {
     display: block;
     margin-left: auto;
@@ -194,5 +191,12 @@ h1 br {display: inherit;}
     padding-top: 11px;
     width: 94%;
   }
+}
 
+@media only screen and (max-width: 320px) {
+  div#footer input[type="text"] {
+    display: block;
+    margin: 11px auto;
+    width: 160px;
+  }
 }
