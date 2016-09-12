@@ -45,7 +45,7 @@
       </div>
       <hr />
       <p>
-        <form "https://formspree.io/email@richardrissanen.com"
+        <form action="https://formspree.io/email@richardrissanen.com"
       method="POST">
           Receive updates in your inbox by joining our mailing list: &nbsp;
           <input type="hidden" name="_next" value="http://www.meetyourdeveloper.com/thanks" />
