@@ -11,7 +11,7 @@ defmodule MeetYourDeveloper.Router do
   alias Plug.Adapters.Cowboy
 
   plug Plug.Logger
-  plug Plug.Static, at: "/", from: :meet_your_developer
+  plug Plug.Static, at: "/", from: "priv/static"
   plug :match
   plug :dispatch
 
