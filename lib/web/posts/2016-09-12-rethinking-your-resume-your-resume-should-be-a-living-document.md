@@ -16,7 +16,7 @@ date: 2016-09-12
  [LinkedIn](https://www.linkedin.com/in/richard-rissanen-7684a867)
 </small>*
 
-  <img src="http://www.meetyourdeveloper.com/assets/img/live-document.jpg" alt=""/>
+<img src="http://www.meetyourdeveloper.com/assets/img/live-document.jpg" alt=""/>
 
 If someone asked for your resume right now, would you have it on you? If your resume is online, it is always available when opportunities present themselves. Imagine running into a potential client in a coffee shop over the weekend. They ask for something more formal than your elevator pitch. What will you give them?
 
