@@ -113,7 +113,7 @@ div#footer {
   font-size: .9em;
 }
 
-/* TEMP FIX: refactor these in or der to minimize markup and classes used. */
+/* TEMP FIX: refactor these in order to minimize markup and classes used. */
 
 .wrapper.add-bottom-margin.blog-post {
   max-width: 666px;
