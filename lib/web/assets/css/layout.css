@@ -187,8 +187,9 @@ h1 br {display: inherit;}
 @media only screen and (max-width: 610px) {
   h1 br {display: none;}
 
-  #subfooter a {
+  div#subfooter a {
     display: block;
+    margin: 0 0 0 0;
     padding-bottom: 11px;
     padding-top: 11px;
     width: 94%;
