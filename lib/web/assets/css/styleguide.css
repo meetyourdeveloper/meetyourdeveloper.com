@@ -147,3 +147,7 @@ h1#thank-you {
 p#submitted {
   margin-bottom: 2em;
 }
+
+div#promotions {
+  margin: 0 auto;
+}
