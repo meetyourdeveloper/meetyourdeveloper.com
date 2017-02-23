@@ -1,37 +1,19 @@
-# Meet Your Developer
+# MeetYourDeveloper
 
-Meet Your Developer is a _"stationary"_ site.
-
-Source files from `lib/web/` are built into `docs/` and served either locally or on Github Pages.
+**TODO: Add description**
 
 ## Installation
 
-Clone this repo:
+If [available in Hex](https://hex.pm/docs/publish), the package can be installed
+by adding `meet_your_developer` to your list of dependencies in `mix.exs`:
 
-```shell
-git clone https://github.com/meetyourdeveloper/meetyourdeveloper.com.git
-cd meetyourdeveloper.com
+```elixir
+def deps do
+  [{:meet_your_developer, "~> 0.1.0"}]
+end
 ```
 
-Install the dependencies:
+Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
+and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
+be found at [https://hexdocs.pm/meet_your_developer](https://hexdocs.pm/meet_your_developer).
 
-```shell
-mix deps.get
-mix compile
-```
-
-## Local Server
-
-Starting the Elixir app will run a localhost server on port 7976: 
-
-```shell
-mix run --no-halt
-```
-
-Changes in `lib/web` will automatically be rebuilt.
-
-## Publishing
-
-Updating the `master` branch will update the live site.
-
-For major changes, please _branch -> commit -> rebase -> review_ before updating `master`.

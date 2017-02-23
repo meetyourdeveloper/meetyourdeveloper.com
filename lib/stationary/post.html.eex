@@ -1,0 +1,2 @@
+<h1><%= post.metadata[:title] %></h1>
+<%= post.content %>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Stationary</title>
+    <link>http://localhost:1234/</link>
+    <description>This is a blog.</description>
+    <%= for post <- Stationary.posts() do %>
+      <item>
+        <title><%= post.metadata[:title] %></title>
+        <author><%= post.metadata[:author] %></author>
+        <link>http://localhost:1234<%= post.metadata[:link] %></link>
+        <guid isPermaLink="false"><%= post.metadata[:link] %></guid>
+        <pubDate><%= post.metadata[:pub_date] %></pubDate>
+        <description><%= post.content %></description>
+      </item>
+    <% end %>
+  </channel>
+</rss>

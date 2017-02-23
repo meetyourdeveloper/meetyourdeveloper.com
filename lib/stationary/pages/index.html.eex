@@ -1,0 +1,6 @@
+<%= for post <- Stationary.posts() |> Enum.take(3) do %>
+  <h1><%= post.metadata[:title] %></h1>
+  <%= post.content %>
+  <p><small><a href="<%= post.metadata[:link] %>">Permalink</a></small></p>
+  <hr />
+<% end %>

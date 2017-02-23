@@ -1,7 +1,18 @@
-<div class="wrapper add-bottom-margin blog-post">
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Stationary</title>
+    <link>http://localhost:1234/</link>
+    <description>This is a blog.</description>
+    
+      <item>
+        <title>Rethinking Your Resume: Your Resume Should Be A Living Document</title>
+        <author>Richard Rissanen</author>
+        <link>http://localhost:1234/posts/your-resume-should-be-a-living-document.html</link>
+        <guid isPermaLink="false">/posts/your-resume-should-be-a-living-document.html</guid>
+        <pubDate>10 Sep 2016 07:00 EST</pubDate>
+        <description><div class="wrapper add-bottom-margin blog-post">
 
-  <h1 class="no-border no-margin negative-bottom-margin"><small>Rethinking Your Resume</small></h1>
-  <h1 class="no-border no-margin">Your Resume Should Be <br>A Living Document</h1>
   <p>
     <em>
       <small>By <a href="/richardrissanen">Richard Rissanen</a> •</small>
@@ -36,4 +47,8 @@
      This is the first article in the series "Rethinking Your Resume". Future articles will address such topics as: understanding and explaining your value, knowing your audience, leveraging alternative media, breaking from tradition, and other great ideas from the writers at <a href="http://www.meetyourdeveloper.com">MeetYourDeveloper.com</a>. Subscribe below to continue learning personal branding and marketing with other software developers all over the internet.
   </p>
 
-</div>
+</div></description>
+      </item>
+    
+  </channel>
+</rss>

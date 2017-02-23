@@ -1,0 +1,9 @@
+<p><input type="search" id="archiveSearch" onkeyup="filterArchive()" /></p>
+
+<%= for post <- Stationary.posts() do %>
+  <p class="searchable" data-match="<%= post.metadata[:title] %>">
+    <small><%= post.metadata[:date].year %>/<%= post.metadata[:date].month %>/<%= post.metadata[:date].day %></small>
+    <strong><a href="<%= post.metadata[:link] %>"><%= post.metadata[:title] %></a></strong>
+    <small><%= post.metadata[:author] %></small>
+  </p>
+<% end %>
