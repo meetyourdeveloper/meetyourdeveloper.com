@@ -1,18 +1,29 @@
 @import 'https://fonts.googleapis.com/css?family=Architects+Daughter|Cabin+Condensed:400,700|Cabin:400,700|Merriweather:300,300i,700,700i';
+
+/* RESET */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 /* ELEMENTS */
 a { color: Crimson; }
 
 a:hover {
   color: white;
   background-color: Crimson;
-  display: inline-block;
-  margin: 0 -4px;
-  padding: 0 4px;
   text-decoration: none;
 }
 
+article {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 666px;
+}
+
 body {
-  background-color: #eee;
+  background-color: #fff;
   color: #111;
   font-family: 'Merriweather', serif;
   font-size: 16px;
@@ -21,24 +32,39 @@ body {
   margin-top: 6px;
 }
 
+br      { display: none; }
+main br { display: block; }
+
 footer {
   color: DimGray;
   font-size: .9em;
   text-align: center;
 }
 
-header { text-align: center; }
+header {
+  padding-top: 11px;
+  text-align: center;
+}
 
 header a {
   font-family: 'Cabin Condensed', sans-serif;
   font-size: 1.33em;
+  margin-left: 11px;
+  margin-right: 11px;
+  padding: 6px 11px;
   text-decoration: none;
+}
+
+header nav ul li {
+  display: inline;
+  font-size: 0.8em;
 }
 
 header span a       { color: #111; }
 header span a:hover {
-  color: #eee;
-  background-color: #111;
+  color: #111;
+  background-color: transparent;
+  text-decoration: underline;
 }
 
 hr {
@@ -63,13 +89,7 @@ h1 {
   margin-bottom: 0;
 }
 
-h1 small {
-  color: Gray;
-  font-size: .5em;
-  font-weight: 400;
-}
-
-h1, h1 small { line-height: 48px; }
+h1, main h1 small { line-height: 48px; }
 
 h2 {
   border-bottom: 3px solid WhiteSmoke;
@@ -91,15 +111,27 @@ h5 {
   margin-bottom: -16px;
 }
 
-h4 small, h5 small {
+img { width: 100%; }
+main img {
+  right: 10%;
+  position: relative;
+  width: 120%;
+}
+
+main h1 small {
+  color: Gray;
+  font-size: .5em;
+  font-weight: 400;
+}
+
+main h4 small, main h5 small {
   color: Gray;
   font-size: .9em;
   font-weight: 400;
 }
 
-nav ul li { display: inline; }
-
-nav ul li a { padding: 22px; }
+small { font-size: 1em; }
+main small { font-size: 0.8em; }
 
 ul, ol {
   list-style-position: outside;
@@ -108,6 +140,17 @@ ul, ol {
 
 
 /* IDs */
+main#resume  {
+  position: relative;
+  right: 25%;
+  width: 150%;
+}
+
+main#resume img {
+  position: static;
+  width: 100%;
+}
+
 p#lede {
   color: Gray;
   font-family: 'Cabin', sans-serif;

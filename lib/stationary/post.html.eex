@@ -1,2 +1,4 @@
-<h1><%= post.metadata[:title] %></h1>
-<%= post.content %>
+<main>
+  <h1><%= post.metadata[:title] %></h1>
+    <%= post.content %>
+</main>
