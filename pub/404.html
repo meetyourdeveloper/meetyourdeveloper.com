@@ -18,17 +18,14 @@
       <nav>
         <ul>
           <li><a class="sticky" data-sticky-only="/" href="/">Recent</a></li>
-          <li><a class="sticky" data-sticky-any="posts" href="/posts">Archive</a></li>
+          <!-- <li><a class="sticky" data-sticky-any="posts" href="/posts">Archive</a></li> -->
           <li><a href="/feed.rss">RSS Feed</a></li>
         </ul>
       </nav>
   </header>
 
+  <p>Not found.</p>
 
-  <article>
-    <p>Not found.</p>
-
-  </article>
 
   <footer>
     <p><strong>Meet Your Developer</strong> teaches personal branding and marketing to software developers all over the internet.</p>
@@ -36,21 +33,21 @@
 
     <article>
       <section>
-        <h2><i class="fa fa-book" aria-hidden="true"></i> The Book <small>Coming Soon</small></h2>
+        <h2><i class="fa fa-book" aria-hidden="true"></i>&nbsp; The Book <small>Coming Soon</small></h2>
         <p>
           All our best writing, expanded with research, case studies, and examples, collated and typeset into a book. Hardback or eBook, your choice. Preorders start as soon as we write enough to fill a book.
         </p>
       </section>
 
       <section>
-        <h2><i class="fa fa-file-text" aria-hidden="true"></i> Resume Review <small>Coming Soon</small></h2>
+        <h2><i class="fa fa-file-text" aria-hidden="true"></i>&nbsp; Resume Review <small>Coming Soon</small></h2>
         <p>
           Personal video chat and screen share session with us to rethink and rewrite your resume. We'll even throw in your very own Meet Your Developer profile page. Appointments starting very soon.
         <p>
       </section>
 
       <section>
-        <h2><i class="fa fa-calendar" aria-hidden="true"></i> Speaking <small>Coming Soon</small></h2>
+        <h2><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp; Speaking <small>Coming Soon</small></h2>
         <p>
           If it's worth writing about, it's worth talking about. We're putting together some great new talks on personal branding and marketing for developers, and we're very excited to get the word out.
         </p>
@@ -58,19 +55,17 @@
 
       <hr />
 
-      <section>
-        <form action="https://formspree.io/email@richardrissanen.com"
-      method="POST">
-          Receive updates in your inbox by joining our mailing list: &nbsp;
-          <input type="hidden" name="_next" value="http://www.meetyourdeveloper.com/thanks" />
-          <input type="text" name="email-submitted" placeholder="you@example.com" /> &nbsp;
-          <input type="submit" value="JOIN NOW" />
-        </form>
-      </section>
+      <form action="https://formspree.io/email@richardrissanen.com"
+    method="POST">
+        <label for="email-submitted">Receive updates in your inbox by joining our mailing list: &nbsp;</label>
+        <input type="hidden" name="_next" value="http://www.meetyourdeveloper.com/thanks" />
+        <input type="text" name="email-submitted" placeholder="you@example.com" /> &nbsp;
+        <input type="submit" value="JOIN NOW" />
+      </form>
 
       <hr />
 
-      <p>Copyright &copy; 2016 Meet Your Developer. All rights reserved.</p>
+      <p id="copy">Copyright &copy; 2016 Meet Your Developer. All rights reserved.</p>
 
     </article>
   </footer>

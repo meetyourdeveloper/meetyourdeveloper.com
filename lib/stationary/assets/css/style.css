@@ -36,13 +36,82 @@ br      { display: none; }
 main br { display: block; }
 
 footer {
+  background-color: #111;
+  background-image: url('/assets/img/bg_black.png');
   color: DimGray;
+  font-family: 'Cabin', sans-serif;
   font-size: .9em;
+  margin-top: 6em;
+  padding-bottom: 1.75em;
+  padding-top: 1.75em;
   text-align: center;
 }
 
+footer article { max-width: 1000px; }
+
+footer p:first-child {
+  color: #bababa;
+  font-size: 19px;
+}
+
+footer hr {
+  border-bottom-color: #222;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+footer article section {
+  display: inline-block;
+  float: left;
+  margin-bottom: 1em;
+  text-align: left;
+  width: 30%;
+}
+
+footer article section:nth-child(2) { margin: 0 5% }
+footer article section:last-child { width: 100%; }
+
+footer article section h2 {
+  border: none;
+  color: #bababa;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+footer article section h2 small {
+  color: DimGray;
+  font-weight: 400;
+}
+
+footer article section p {
+  margin-top: 0;
+}
+
+footer input[type="text"] {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px dashed #222;
+  color: white;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 1.33em;
+  outline: none;
+}
+
+footer input[type="submit"] {
+  background: linear-gradient(to bottom, Crimson 0%, DarkRed 100%);
+  border: none;
+  border-radius: 3px;
+  color: #dedede;
+  display: inline-block;
+  font-size: 14px;
+  font-family: 'Cabin Condensed', sans-serif;
+  font-weight: bold;
+  padding: .5em 1em;
+}
+
 header {
-  padding-top: 11px;
+  padding-top: 44px;
   text-align: center;
 }
 
@@ -130,8 +199,7 @@ main h4 small, main h5 small {
   font-weight: 400;
 }
 
-small { font-size: 1em; }
-main small { font-size: 0.8em; }
+small { font-size: 0.8em; }
 
 ul, ol {
   list-style-position: outside;
@@ -139,13 +207,65 @@ ul, ol {
 }
 
 /* IDs */
-main#resume  {
-  position: relative;
-  right: 25%;
-  width: 150%;
+p#copy {
+  color: #333;
+  font-size: 14px;
 }
 
-main#resume img {
+/* RESUME */
+div#contact-buttons {
+  text-align: center;
+}
+
+div#contact-buttons a {
+  background: linear-gradient(to bottom, White 0%, GhostWhite 100%);
+  border: 1px solid #dedede;
+  border-radius: 3px;
+  color: Black;
+  display: inline-block;
+  font-family: 'Cabin Condensed', sans-serif;
+  font-size: 18px;
+  margin: .3em;
+  padding: .5em;
+  text-align: center;
+  text-decoration: none;
+  width: 33%;
+}
+
+div#contact-buttons a:hover {
+  background: linear-gradient(to bottom, SkyBlue 0%, DeepSkyBlue 100%);
+  background-color: Gainsboro;
+  border: 1px solid SkyBlue;
+  color: white;
+}
+
+div#subfooter {
+  background-color: GhostWhite;
+  margin-top: 6em;
+  margin-bottom: -6em;
+  padding: 22px;
+  text-align: center;
+}
+
+div#subfooter a {
+  color: #111;
+  display: inline-block;
+  font-family: 'Cabin', sans-serif;
+  margin: 0 1em;
+  text-decoration: none;
+}
+
+div#subfooter a:hover {
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+main article#resume  {
+  width: 100%;
+  max-width: 1000px;
+}
+
+main article#resume img {
   position: static;
   width: 100%;
 }
@@ -158,3 +278,66 @@ p#lede {
 }
 
 span#highlight { background-color: yellow; }
+
+/* MOBILE */
+@media only screen and (max-width: 1050px) {
+  ul, ol { margin-left: 22px; }
+  nav ul { margin-left: 0; }
+}
+
+@media only screen and (max-width: 1000px) {
+  footer, main article#resume section, article {
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 96%;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  footer article section {
+    display: block;
+    width: 100%;
+  }
+
+  footer article section:nth-child(2) { margin: 0 }
+
+  main img {
+    position: static;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+
+  h2 {
+    line-height: 1em;
+  }
+
+  label {
+    display: block;
+    width: 96%;
+  }
+
+  input[type="text"] {
+    display: block;
+    position: relative;
+    left: 22.5%;
+    width: 55%;
+  }
+
+ div#subfooter a  {
+    margin: 11px 1%;
+    width: 98%;
+  }
+
+  div#contact-buttons a {
+    width: 92%;
+    padding: 11px 2%;
+  }
+
+  p#lede {
+    font-size: 22px;
+    line-height: 1.25;
+  }
+
+}

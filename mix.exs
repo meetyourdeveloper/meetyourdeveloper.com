@@ -28,6 +28,6 @@ defmodule MeetYourDeveloper.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    [{:stationary, "~> 1.0.0"}]
+    [{:stationary, "~> 1.0.0", git: "https://github.com/jarrodtaylor/stationary"}]
   end
 end

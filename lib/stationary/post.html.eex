@@ -1,4 +1,12 @@
 <main>
-  <h1><%= post.metadata[:title] %></h1>
+  <article>
+    <hr /> 
+    <%= if post.metadata[:series_title] do  %>
+      <h1><small><%= post.metadata[:series_title] %></small> <br><%= post.metadata[:title] %></h1>
+    <% else %>
+      <h1><%= post.metadata[:title] %></h1>
+    <% end %>
+
     <%= post.content %>
+  </article>
 </main>

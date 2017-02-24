@@ -18,18 +18,21 @@
       <nav>
         <ul>
           <li><a class="sticky" data-sticky-only="/" href="/">Recent</a></li>
-          <li><a class="sticky" data-sticky-any="posts" href="/posts">Archive</a></li>
+          <!-- <li><a class="sticky" data-sticky-any="posts" href="/posts">Archive</a></li> -->
           <li><a href="/feed.rss">RSS Feed</a></li>
         </ul>
       </nav>
   </header>
 
-
-  <article>
-    <main>
-  
-    <h1><small>Rethinking Your Resume</small> <br>Your Resume Should Be <br>A Living Document</h1>
-    <p><em><small>By <a href="/richardrissanen">Richard Rissanen</a> •
+  <main>
+  <section>
+    
+      <article>
+        <hr />
+        
+          <h1><small>Rethinking Your Resume</small> <br>Your Resume Should Be <br>A Living Document</h1>
+        
+        <p><em><small>By <a href="/richardrissanen">Richard Rissanen</a> •
 Follow: <a href="https://twitter.com/thekarmakazie">Twitter</a>,
 <a href="https://www.instagram.com/thekarmakazie/">Instagram</a>,
 <a href="https://www.linkedin.com/in/richard-rissanen-7684a867">LinkedIn</a></small></em></p>
@@ -48,12 +51,12 @@ Follow: <a href="https://twitter.com/thekarmakazie">Twitter</a>,
 <p>Your resume should be a living document: always online, always up to date, and always ready when someone asks.</p>
 <p>This is the first article in the series “Rethinking Your Resume”. Future articles will address such topics as: understanding and explaining your value, knowing your audience, leveraging alternative media, breaking from tradition, and other great ideas from the writers at <a href="http://www.meetyourdeveloper.com">MeetYourDeveloper.com</a>. Subscribe below to continue learning personal branding and marketing with other software developers all over the internet.</p>
 
-    <p><small><a href="/posts/your-resume-should-be-a-living-document.html">Permalink</a></small></p>
-    <hr />
-  
+        <p><small><a href="/posts/your-resume-should-be-a-living-document.html">Permalink</a></small></p>
+      </article>
+    
+  </section>
 </main>
 
-  </article>
 
   <footer>
     <p><strong>Meet Your Developer</strong> teaches personal branding and marketing to software developers all over the internet.</p>
@@ -61,21 +64,21 @@ Follow: <a href="https://twitter.com/thekarmakazie">Twitter</a>,
 
     <article>
       <section>
-        <h2><i class="fa fa-book" aria-hidden="true"></i> The Book <small>Coming Soon</small></h2>
+        <h2><i class="fa fa-book" aria-hidden="true"></i>&nbsp; The Book <small>Coming Soon</small></h2>
         <p>
           All our best writing, expanded with research, case studies, and examples, collated and typeset into a book. Hardback or eBook, your choice. Preorders start as soon as we write enough to fill a book.
         </p>
       </section>
 
       <section>
-        <h2><i class="fa fa-file-text" aria-hidden="true"></i> Resume Review <small>Coming Soon</small></h2>
+        <h2><i class="fa fa-file-text" aria-hidden="true"></i>&nbsp; Resume Review <small>Coming Soon</small></h2>
         <p>
           Personal video chat and screen share session with us to rethink and rewrite your resume. We'll even throw in your very own Meet Your Developer profile page. Appointments starting very soon.
         <p>
       </section>
 
       <section>
-        <h2><i class="fa fa-calendar" aria-hidden="true"></i> Speaking <small>Coming Soon</small></h2>
+        <h2><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp; Speaking <small>Coming Soon</small></h2>
         <p>
           If it's worth writing about, it's worth talking about. We're putting together some great new talks on personal branding and marketing for developers, and we're very excited to get the word out.
         </p>
@@ -83,19 +86,17 @@ Follow: <a href="https://twitter.com/thekarmakazie">Twitter</a>,
 
       <hr />
 
-      <section>
-        <form action="https://formspree.io/email@richardrissanen.com"
-      method="POST">
-          Receive updates in your inbox by joining our mailing list: &nbsp;
-          <input type="hidden" name="_next" value="http://www.meetyourdeveloper.com/thanks" />
-          <input type="text" name="email-submitted" placeholder="you@example.com" /> &nbsp;
-          <input type="submit" value="JOIN NOW" />
-        </form>
-      </section>
+      <form action="https://formspree.io/email@richardrissanen.com"
+    method="POST">
+        <label for="email-submitted">Receive updates in your inbox by joining our mailing list: &nbsp;</label>
+        <input type="hidden" name="_next" value="http://www.meetyourdeveloper.com/thanks" />
+        <input type="text" name="email-submitted" placeholder="you@example.com" /> &nbsp;
+        <input type="submit" value="JOIN NOW" />
+      </form>
 
       <hr />
 
-      <p>Copyright &copy; 2016 Meet Your Developer. All rights reserved.</p>
+      <p id="copy">Copyright &copy; 2016 Meet Your Developer. All rights reserved.</p>
 
     </article>
   </footer>
