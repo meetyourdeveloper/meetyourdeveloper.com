@@ -261,6 +261,7 @@ div#subfooter a:hover {
 }
 
 main article#resume  {
+  padding: 0;
   width: 100%;
   max-width: 1000px;
 }
@@ -305,6 +306,7 @@ span#highlight { background-color: yellow; }
     position: static;
     width: 100%;
   }
+
 }
 
 @media only screen and (max-width: 610px) {
