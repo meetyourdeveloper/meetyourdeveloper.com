@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
-    <title>Stationary</title>
-    <link>http://localhost:1234/</link>
-    <description>This is a blog.</description>
+    <title>Meet Your Developer</title>
+    <link>http://www.meetyourdeveloper.com</link>
+    <description>Teaching personal branding and marketing to software developers all over the internet.</description>
     <%= for post <- Stationary.posts() do %>
       <item>
         <title><%= post.metadata[:title] %></title>
         <author><%= post.metadata[:author] %></author>
-        <link>http://localhost:1234<%= post.metadata[:link] %></link>
+        <link>http://www.meetyourdeveloper.com<%= post.metadata[:link] %></link>
         <guid isPermaLink="false"><%= post.metadata[:link] %></guid>
         <pubDate><%= post.metadata[:pub_date] %></pubDate>
         <description><%= post.content %></description>
