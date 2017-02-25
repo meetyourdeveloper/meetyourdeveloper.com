@@ -1,0 +1,343 @@
+@import 'https://fonts.googleapis.com/css?family=Architects+Daughter|Cabin+Condensed:400,700|Cabin:400,700|Merriweather:300,300i,700,700i';
+
+/* RESET */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* ELEMENTS */
+a { color: Crimson; }
+
+a:hover {
+  color: white;
+  background-color: Crimson;
+  text-decoration: none;
+}
+
+article {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 666px;
+}
+
+body {
+  background-color: #fff;
+  color: #111;
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5em;
+  margin-top: 6px;
+}
+
+br      { display: none; }
+main br { display: block; }
+
+footer {
+  background-color: #111;
+  background-image: url('/assets/img/bg_black.png');
+  color: DimGray;
+  font-family: 'Cabin', sans-serif;
+  font-size: .9em;
+  margin-top: 6em;
+  padding-bottom: 1.75em;
+  padding-top: 1.75em;
+  text-align: center;
+}
+
+footer article { max-width: 1000px; }
+
+footer p:first-child {
+  color: #bababa;
+  font-size: 19px;
+}
+
+footer hr {
+  border-bottom-color: #222;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+footer article section {
+  display: inline-block;
+  float: left;
+  margin-bottom: 1em;
+  text-align: left;
+  width: 30%;
+}
+
+footer article section:nth-child(2) { margin: 0 5% }
+footer article section:last-child { width: 100%; }
+
+footer article section h2 {
+  border: none;
+  color: #bababa;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+footer article section h2 small {
+  color: DimGray;
+  font-weight: 400;
+}
+
+footer article section p {
+  margin-top: 0;
+}
+
+footer input[type="text"] {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px dashed #222;
+  color: white;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 1.33em;
+  outline: none;
+}
+
+footer input[type="submit"] {
+  background: linear-gradient(to bottom, Crimson 0%, DarkRed 100%);
+  border: none;
+  border-radius: 3px;
+  color: #dedede;
+  display: inline-block;
+  font-size: 14px;
+  font-family: 'Cabin Condensed', sans-serif;
+  font-weight: bold;
+  padding: .5em 1em;
+}
+
+header {
+  padding-top: 44px;
+  text-align: center;
+}
+
+header a {
+  font-family: 'Cabin Condensed', sans-serif;
+  font-size: 1.33em;
+  margin-left: 11px;
+  margin-right: 11px;
+  padding: 6px 11px;
+  text-decoration: none;
+}
+
+header nav ul li {
+  display: inline;
+  font-size: 0.8em;
+}
+
+header span a       { color: #111; }
+header span a:hover {
+  color: #111;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+hr {
+  border: none;
+  border-bottom: 3px solid WhiteSmoke;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  width: 80%;
+}
+
+html {
+  background-color: #111;
+  background-image: url('/assets/img/bg_black.png');
+}
+
+h1, h2, h3, h4, h5, h6 { color: Black; }
+
+h1, h2 { font-family: 'Cabin Condensed', sans-serif; }
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 0;
+}
+
+h1, main h1 small { line-height: 48px; }
+
+h2 {
+  border-bottom: 3px solid WhiteSmoke;
+  font-size: 32px;
+  margin-bottom: 0;
+  padding-top: 32px;
+  padding-bottom: .1em;
+}
+
+h3 { font-size: 24px; }
+
+h4 {
+  font-size: 19px;
+  margin-bottom: -16px;
+}
+
+h5 {
+  font-size: 16px;
+  margin-bottom: -16px;
+}
+
+img { width: 100%; }
+main img {
+  right: 10%;
+  position: relative;
+  width: 120%;
+}
+
+main h1 small {
+  color: Gray;
+  font-size: .5em;
+  font-weight: 400;
+}
+
+main h4 small, main h5 small {
+  color: Gray;
+  font-size: .9em;
+  font-weight: 400;
+}
+
+small { font-size: 0.8em; }
+
+ul, ol {
+  list-style-position: outside;
+  padding-left: 0;
+}
+
+/* IDs */
+p#copy {
+  color: #333;
+  font-size: 14px;
+}
+
+/* RESUME */
+div#contact-buttons {
+  text-align: center;
+}
+
+div#contact-buttons a {
+  background: linear-gradient(to bottom, White 0%, GhostWhite 100%);
+  border: 1px solid #dedede;
+  border-radius: 3px;
+  color: Black;
+  display: inline-block;
+  font-family: 'Cabin Condensed', sans-serif;
+  font-size: 18px;
+  margin: .3em;
+  padding: .5em;
+  text-align: center;
+  text-decoration: none;
+  width: 33%;
+}
+
+div#contact-buttons a:hover {
+  background: linear-gradient(to bottom, SkyBlue 0%, DeepSkyBlue 100%);
+  background-color: Gainsboro;
+  border: 1px solid SkyBlue;
+  color: white;
+}
+
+div#subfooter {
+  background-color: GhostWhite;
+  margin-top: 6em;
+  margin-bottom: -6em;
+  padding: 22px;
+  text-align: center;
+}
+
+div#subfooter a {
+  color: #111;
+  display: inline-block;
+  font-family: 'Cabin', sans-serif;
+  margin: 0 1em;
+  text-decoration: none;
+}
+
+div#subfooter a:hover {
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+main article#resume  {
+  width: 100%;
+  max-width: 1000px;
+}
+
+main article#resume img {
+  position: static;
+  width: 100%;
+}
+
+p#lede {
+  color: Gray;
+  font-family: 'Cabin', sans-serif;
+  font-size: 24px;
+  line-height: 1.5em;
+}
+
+span#highlight { background-color: yellow; }
+
+/* MOBILE */
+@media only screen and (max-width: 1050px) {
+  ul, ol { margin-left: 22px; }
+  nav ul { margin-left: 0; }
+}
+
+@media only screen and (max-width: 1000px) {
+  footer, main article#resume section, article {
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 96%;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  footer article section {
+    display: block;
+    width: 100%;
+  }
+
+  footer article section:nth-child(2) { margin: 0 }
+
+  main img {
+    position: static;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+
+  h2 {
+    line-height: 1em;
+  }
+
+  label {
+    display: block;
+    width: 96%;
+  }
+
+  input[type="text"] {
+    display: block;
+    position: relative;
+    left: 22.5%;
+    width: 55%;
+  }
+
+ div#subfooter a  {
+    margin: 11px 1%;
+    width: 98%;
+  }
+
+  div#contact-buttons a {
+    width: 92%;
+    padding: 11px 2%;
+  }
+
+  p#lede {
+    font-size: 22px;
+    line-height: 1.25;
+  }
+
+}
