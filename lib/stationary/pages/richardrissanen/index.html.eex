@@ -30,8 +30,9 @@
         <li>Created a b2b solution for iOS and Android that <em><strong>simplified</em></strong> the barrier of entry for new customers and <em><strong>opened up</em></strong> a new market segment</li>
         <li>Designed and implemented utilities that have prioritized transaction transparency and <span id="highlight"><em><strong>prevented the loss of millions of dollars</em></strong></span></li>
       </ul>
+    </section>
 
-
+    <section>
       <h2>Effective solutions and positive results</h2>
 
       <h4>
@@ -80,7 +81,34 @@
       <p>
         The Tech industry moves fast, and after a while (say 5 years) you get diminishing returns regarding relevant experience. Prior to the work listed above I started as a Junior Web Developer and soon moved on to contract work. If you want to talk shop about old projects feel free to shoot me an email at <a href="mailto:email@richardrissanen.com">email@richardrissanen.com</a>.
       </p>
+    </section>
 
+    <section id="testimonials">
+      <h2>What people are saying</h2>
+
+      <div>
+        <img src="assets/img/colinreposa.png" alt="">
+
+        <p>"Richard’s process is transparent. He’s always up front with his approach to making our customers’ projects successful."</p>
+
+        <p>– Colin Reposa, Vice President, Resource Management at Syrinx Consulting Corporation</p>
+
+      </div>
+
+      <div id="clear"></div>
+
+      <div>
+        <img src="assets/img/davidbanks.png" alt="">
+
+        <p>"My first experience with Richard was such a success that when I went to work on my next project he was one of the first consultants I called."</p>
+
+        <p>– Dave Banks, SVP of Payments at Gas Buddy<p>
+
+      </div>
+
+    </section>
+
+    <section>
       <h2>In the works</h2>
 
       <p>I have serveral projects in the works that I hope to release by the end of the year.</p>
@@ -94,7 +122,9 @@
       </ol>
 
       <p>These projects are in various stages of completion but many of them are live now and the rest will be released soon.</p>
+    </section>
 
+    <section>
       <h2>Moving forward</h2>
 
       <p>

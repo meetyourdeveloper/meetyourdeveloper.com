@@ -213,6 +213,12 @@ p#copy {
 }
 
 /* RESUME */
+div#clear {
+  clear: both;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
 div#contact-buttons {
   text-align: center;
 }
@@ -270,12 +276,19 @@ main article#resume img {
   width: 100%;
 }
 
+main article#resume section#testimonials img {
+  float: left;
+  padding-right: 22px;
+  width: 125px;
+}
+
 p#lede {
   color: Gray;
   font-family: 'Cabin', sans-serif;
   font-size: 24px;
   line-height: 1.5em;
 }
+
 
 span#highlight { background-color: yellow; }
 
@@ -334,6 +347,15 @@ span#highlight { background-color: yellow; }
     width: 92%;
     padding: 11px 2%;
   }
+
+  main article#resume section#testimonials img {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  main article#resume section#testimonials img:first-child { padding-top: 44px; }
 
   p#lede {
     font-size: 22px;
