@@ -381,14 +381,10 @@ span#highlight { background-color: yellow; }
   main article#resume section#testimonials img {
     float: none;
     display: block;
-    /*margin-left: auto;
-    margin-right: auto;*/
     padding: 11px 11px 0px 11px
   }
 
   main article#resume section#testimonials img:first-child { margin-top: -11px; }
-
-  /*section#testimonials div { text-align: center; }*/
 
   p#lede {
     font-size: 22px;
