@@ -213,12 +213,6 @@ p#copy {
 }
 
 /* RESUME */
-div#clear {
-  clear: both;
-  padding-top: 11px;
-  padding-bottom: 11px;
-}
-
 div#contact-buttons {
   text-align: center;
 }
@@ -267,6 +261,8 @@ div#subfooter a:hover {
 }
 
 main article#resume  {
+  padding-left: 0%;
+  padding-right: 0%;
   width: 100%;
   max-width: 1000px;
 }
@@ -278,12 +274,29 @@ main article#resume img {
 
 main article#resume section#testimonials img {
   float: left;
-  padding-right: 22px;
+  padding: 11px;
   width: 125px;
 }
 
+section#testimonials div {
+  display: inline;
+  display: inline-block;
+  padding: 22px 0 0 0;
+  width: 49%;
+}
+
+section#testimonials hr {
+  display: none;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+section#testimonials p span {
+  color: gray;
+}
+
 p#lede {
-  color: Gray;
+  color: gray;
   font-family: 'Cabin', sans-serif;
   font-size: 24px;
   line-height: 1.5em;
@@ -304,6 +317,23 @@ span#highlight { background-color: yellow; }
     padding-right: 2%;
     width: 96%;
   }
+
+  main article#resume  {
+    padding-left: 0%;
+    padding-right: 0%;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  section#testimonials div {
+    display: block;
+    overflow: auto;
+    width: 100%;
+  }
+
+  section#testimonials hr { display: block; }
+
 }
 
 @media only screen and (max-width: 810px) {
@@ -351,11 +381,10 @@ span#highlight { background-color: yellow; }
   main article#resume section#testimonials img {
     float: none;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 11px 11px 0px 11px
   }
 
-  main article#resume section#testimonials img:first-child { padding-top: 44px; }
+  main article#resume section#testimonials img:first-child { margin-top: -11px; }
 
   p#lede {
     font-size: 22px;

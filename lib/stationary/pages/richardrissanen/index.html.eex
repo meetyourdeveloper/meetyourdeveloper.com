@@ -87,23 +87,20 @@
       <h2>What people are saying</h2>
 
       <div>
-        <img src="assets/img/colinreposa.png" alt="">
-
-        <p>"Richard’s process is transparent. He’s always up front with his approach to making our customers’ projects successful."</p>
-
-        <p>– Colin Reposa, Vice President, Resource Management at Syrinx Consulting Corporation</p>
-
-      </div>
-
-      <div id="clear"></div>
-
-      <div>
         <img src="assets/img/davidbanks.png" alt="">
+
+        <p><span>Dave Banks at Gas Buddy</span><p>
 
         <p>"My first experience with Richard was such a success that when I went to work on my next project he was one of the first consultants I called."</p>
 
-        <p>– Dave Banks, SVP of Payments at Gas Buddy<p>
+      </div>
+      <hr>
+      <div>
+        <img src="assets/img/colinreposa.png" alt="">
 
+        <p><span>Colin Reposa at Syrinx Consulting</span></p>
+
+        <p>"Richard’s process is transparent. He’s always up front with his approach to making our customers’ projects successful."</p>
       </div>
 
     </section>
