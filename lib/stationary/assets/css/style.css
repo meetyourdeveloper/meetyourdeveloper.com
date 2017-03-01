@@ -342,7 +342,9 @@ span#highlight { background-color: yellow; }
     width: 100%;
   }
 
-  footer article section:nth-child(2) { margin: 0 }
+  footer article section:nth-child(2) {
+    margin: 0 0 1em 0;
+  }
 
   main img {
     position: static;
@@ -364,8 +366,9 @@ span#highlight { background-color: yellow; }
   input[type="text"] {
     display: block;
     position: relative;
-    left: 22.5%;
-    width: 55%;
+    left: 50%;
+    margin-left: -80px;
+    width: 160px;
   }
 
  div#subfooter a  {
