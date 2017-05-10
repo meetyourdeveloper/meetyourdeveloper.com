@@ -9,10 +9,10 @@
     <p class="no-margin text-center"><img class="primary-image" src="/assets/img/richardrissanen.jpg" /></p>
 
     <section>
+      <p id="lede">Compulsive researcher of the mildly interesting. Extroverted introvert, writer, speaker, recovering programmer, and on occasion I help brands grow stronger.</p>
+    </section>
 
-      <p id="lede">
-        Formerly head of development for Cumberland Farms&#8217; <a href="https://www.cumberlandfarms.com/smartpay">SmartPay App</a>, now I am Lead Developer of Mobile Payment Solutions for <a href="http://www.syrinx.com">Syrinx Consulting</a>, I write for <a href="index.html">MeetYourDeveloper.com</a> and <a href="http://brandaudit.co">BrandAudit.co</a>, <a href="http://richardrissanen.com">build my own products</a>, speak at local meetups, and <a href="http://meetyourconsultant.com">consult for my own clients</a>. Previously, I worked for <a href="http://www.tomorrowpictures.com">Tomorrow Pictures</a> as their Senior Web Developer of both internal and client projects. I have worked with clients such as Cumberland Farms, Children&#8217;s Healthcare of Atlanta, Localyitcs, and Amtrak.
-      </p>
+    <section>
 
       <div id="contact-buttons">
         <a href="mailto:email@richardrissanen.com"><i class="fa fa-envelope-o"></i> Email</a>
@@ -21,114 +21,16 @@
 
       <hr />
 
-      <p>In recent years I have assisted clients with several impactful initiatives; here are just a few:</p>
-
-      <ul>
-        <li>Integration of a rewards program that added customer incentive and foot traffic in retail stores leading to <em><strong>increased</strong></em> revenue</li>
-        <li>Refactored a payment workflow that <em><strong>fixed</em></strong> errors, <em><strong>reduced</em></strong> customer confusion, and in turn <em><strong>minimized</em></strong> cost through support needed</li>
-        <li>Built out a high availability infrastructure with redundancies, distributed load, and daily backups that <em><strong>maximized</em></strong> uptime all the while <em><strong>eliminating</em></strong> points of failure</li>
-        <li>Created a b2b solution for iOS and Android that <em><strong>simplified</em></strong> the barrier of entry for new customers and <em><strong>opened up</em></strong> a new market segment</li>
-        <li>Designed and implemented utilities that have prioritized transaction transparency and <span id="highlight"><em><strong>prevented the loss of millions of dollars</em></strong></span></li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Effective solutions and positive results</h2>
-
-      <h4>
-        Syrinx Consulting Corporation
-        <small>Lead Developer of Mobile Payment Solutions, March 2013 - Present</small>
-      </h4>
-
-      <p>
-        I started consulting with Syrinx in early 2013 and moved up the ranks fast. I have directly worked with marketing on initiatives related to branding, design, and UI / UX, resulting in better accessibility on both desktop and mobile browsers. I have performed discovery on both new technology and several problem domains to better empower management regarding customer acquisition and leveraging of said technologies. I have attended several meetings representing the company as an advisor, have diagnosed customer problems, proposed solutions, and written several statements of work on behalf of the company.
-      </p>
-
-      <p><small><strong>Skills:</strong> Advising, Creation of SOWs, Desktop and Mobile Design, Diagnosis of Problems, Discovery, Proposed Solutions, UI / UX</small></p>
-
-      <h5>Cumberland Farms</h5>
-
-      <p>
-        From friends and family launch, to public release, to growing pains, I have been involved with the Cumberland Farm's SmartPay platform. I increased customer engagement through integration of a rewards program, added in-store promotions within their app, and overhauled their maps by adding filtering by product, hours, and location. I stopped headaches by being their go-to developer for maintaining their infrastructure, APIs, third party integrations, and their iOS, Android, and mobile web applications. I helped foster better customer relations by advising on UX, API workflows, and third party integrations to prevent negative impacts. I reduced costs by taking a document driven and a test first approach that has led to easier on-boarding of new developers. I also leveraged existing tools and libraries to further minimize the required developers needed to properly maintain the application. I maximized uptime by building out a high availability server setup which could incur multiple server failures and still preform at peak load.
-      </p>
-
-      <p><small><strong>Skills:</strong> iOS (Objective C), Android (Java), JRuby, Ruby on Rails, Eventmachine, Nginx, Torquebox, HTML, CSS, JS, Capistrano, Capybara, Rspec, Factory Girl, jQuery, jQuery Mobile, Minitest, MySql, RHEL, Zipline, Retalix, Bash, New Relic, Python</small></p>
-
-      <h5>Localytics</h5>
-
-      <p>
-        Localytics brought me on to handle the implementation of a third party payment system. I assisted with the planning and design of the integration, which led to greater customer acquisition through ease of use and modern design. I boosted productivity by working with third party contractors on behalf of Localytics, preventing misunderstandings and gaps in communication. I built several modules to break out complexity and ease understanding of the payment library. I was flexible with the client's schedule while still maintaining a high level of efficiency, preventing the project from running longer than needed.
-      </p>
-
-      <p><small><strong>Skills:</strong> Ruby on Rails, Angular, HTML, CSS, JS, SASS, Netsuite, Zuora, Rspec, CoffeeScript, Capybara, Poltergeist, Teaspoon, Mocha, AWS</small></p>
-
-      <h4>
-        Tomorrow Pictures Inc.
-        <small>Senior Software Engineer, October 2011 - April 2013</small>
-      </h4>
-
-      <p>
-        I joined the Tomorrow Pictures team in late 2011 as a Senior Software Engineer. I planned, created, and advised on in-house applications that led to increased productivity of the team. I assisted in sales and planning meetings with clients to help diagnose problems and present effective solutions. I increased reliability of their customers' sites by transitioning them to newly provisioned servers with added security and uptime. I reduced expenses by producing a white label solution for a reoccurring project, eliminating a majority of the overhead.
-      </p>
-
-      <p><small><strong>Skills:</strong>Skills:</strong> Ruby, Sinatra, Heroku, Python, Ubuntu, Bash, HTML, CSS, JS, jQuery</small></p>
-
-      <h4>
-        Other Ventures
-        <small>April 2008 - September 2011</small>
-      </h4>
-
-      <p>
-        The Tech industry moves fast, and after a while (say 5 years) you get diminishing returns regarding relevant experience. Prior to the work listed above I started as a Junior Web Developer and soon moved on to contract work. If you want to talk shop about old projects feel free to shoot me an email at <a href="mailto:email@richardrissanen.com">email@richardrissanen.com</a>.
-      </p>
-    </section>
-
-    <section id="testimonials">
-      <h2>What people are saying</h2>
-
-      <div>
-        <img src="/assets/img/davidbanks.png" alt="">
-
-        <p><span>Dave Banks at Gas Buddy</span><p>
-
-        <p>"My first experience with Richard was such a success that when I went to work on my next project he was one of the first consultants I called."</p>
-
-      </div>
-      <hr>
-      <div>
-        <img src="/assets/img/colinreposa.png" alt="">
-
-        <p><span>Colin Reposa at Syrinx Consulting</span></p>
-
-        <p>"Richard’s process is transparent. He’s always up front with his approach to making our customers’ projects successful."</p>
-      </div>
-
     </section>
 
     <section>
       <h2>In the works</h2>
 
-      <p>I have serveral projects in the works that I hope to release by the end of the year.</p>
-
-      <ol>
+      <ul>
         <li><strong>MeetYourConsultant.com:</strong> is my solo tech consultancy where I build custom software, mobile apps, and websites for my clients. You can find it <a href="http://meetyourconsultant.com">here.</a></li>
         <li><strong>MeetYourDeveloper.com:</strong> A collection of articles that leverage mine and Jarrod Taylor's experiences to educate developers about personal branding and marketing. Read my <a href="/posts/your-resume-should-be-a-living-document.html">latest contribution.</a></li>
         <li><strong>BrandAudit.co:</strong> A solo venture where I write articles on how small and medium sized businesses can make their brands stronger. Read my <a href="http://brandaudit.co/posts/how-you-should-learn-to-stop-worrying-and-love-saying-no.html">latest contribution.</a></li>
-        <li><strong>Tom, Doc and Harriet:</strong> In recent years I have become obsessed with documentation, testing, and the D.R.Y. principle. This has led me to create a Ruby library that leverages the TomDoc Spec to run unit tests within inline documentation. This prevents one from having to write both examples and unit tests because they will be one and the same.</li>
-        <li><strong>guitarcheck.info:</strong> A minimum viable protoype leveraging brand, serial number, and country of origin in order to find the  year a guitar was made. More details <a href="http://guitarcheck.info">here.</a></li>
-      </ol>
-
-      <p>These projects are in various stages of completion but many of them are live now and the rest will be released soon.</p>
-    </section>
-
-    <section>
-      <h2>Moving forward</h2>
-
-      <p>
-        I am interested in solving your difficult problems and producing meaningful results. By cultivating relationships with other consultants and companies, if I am not a good fit for your project, I will suggest someone who is. Further engagement with the tech community will help keep me aware of the best technologies to leverage for your project. Through pushing a document driven approach to consulting I&#8217;ll increase transparency of what is being done and reduce on-boarding time of any developers during / post my involvement. Questioning the status quo (this digital resume, for example) and assisting in diagnosis of your needs will allow me properly solve your problems.
-      </p>
-
-      <p>Questions, comments, or just want to chat? Email me at <a href="mailto:email@richardrissanen.com">email@richardrissanen.com</a></p>
+      </ul>
 
     </section>
   </article>
